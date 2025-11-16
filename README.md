@@ -95,7 +95,7 @@ O projeto está publicado no GitHub Pages com duas seções principais:
 
 ### 🌐 Acessar a Página
 
-**URL:** [https://mtechdevelopment.github.io/bootcamp2-chrome-ext-MTECHDevelopment/](https://mtechdevelopment.github.io/bootcamp2-chrome-ext-MTECHDevelopment/)
+**URL:** [https://mtechdevelopment.github.io/bootcamp2-chrome-ext-MTECHDevelopment/docs](https://mtechdevelopment.github.io/bootcamp2-chrome-ext-MTECHDevelopment/docs)
 
 ### 📑 Estrutura do Site
 
