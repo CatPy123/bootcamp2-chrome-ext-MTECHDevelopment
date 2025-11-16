@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Página de apresentação da Extensão Popup" />
-    <title>Extensão Popup • Demo</title>
+    <meta name="description" content="MTECHDevelopment — Extensão Chrome & PWA Bloco de Notas" />
+    <title>MTECHDevelopment • Bootcamp 2</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -13,16 +13,45 @@
 <body>
     <header class="site-header">
         <div class="wrap">
-            <h1 class="site-title">Extensão Popup</h1>
-            <p class="site-subtitle">Demonstração e capturas de tela</p>
+            <h1 class="site-title">MTECHDevelopment</h1>
+            <p class="site-subtitle">Bootcamp 2 — Extensão Chrome & PWA</p>
         </div>
     </header>
     <main class="content wrap" id="topo">
         <section class="intro-text">
-            <p>Esta página apresenta a <strong>Extensão Popup</strong>. Abaixo você poderá inserir capturas de tela (prints) mostrando o funcionamento: popup, opções, conteúdo, ícone, etc. A seção final mantém o código original exatamente como foi criado para referência.</p>
+            <p>
+                Bem-vindo ao projeto <strong>MTECHDevelopment</strong>, desenvolvido durante o Bootcamp 2. 
+                Este projeto inclui uma <strong>Extensão Chrome (Manifest V3)</strong> focada em leitura e produtividade, 
+                e uma <strong>PWA (Progressive Web App)</strong> para gerenciar notas localmente.
+            </p>
+            <p>Navegue pelos projetos abaixo para conhecer mais detalhes, funcionalidades e como utilizá-los.</p>
         </section>
+
+        <section class="projects-showcase" aria-label="Projetos disponíveis">
+            <h2 class="section-title">Projetos</h2>
+            <div class="projects-grid">
+                <a href="./popup.html" class="project-card">
+                    <div class="project-icon">📱</div>
+                    <h3>Extensão Chrome</h3>
+                    <p class="project-desc">
+                        Extensão Popup (Manifest V3) para destaque, produtividade e anotações rápidas na página.
+                    </p>
+                    <span class="project-arrow">→ Ver Detalhes</span>
+                </a>
+                <a href="./pwa.html" class="project-card">
+                    <div class="project-icon">📝</div>
+                    <h3>PWA Bloco de Notas</h3>
+                    <p class="project-desc">
+                        Progressive Web App para gerenciar notas localmente com funcionalidade offline.
+                    </p>
+                    <span class="project-arrow">→ Ver Detalhes</span>
+                </a>
+            </div>
+        </section>
+
         <section class="gallery" aria-label="Galeria de capturas da extensão">
-            <h2 class="section-title">Capturas de Tela</h2>
+            <h2 class="section-title">Capturas da Extensão Popup</h2>
+            <p>Veja a extensão em ação:</p>
             <div class="gallery-grid">
                 <!-- Substitua cada placeholder abaixo por uma <img>. Exemplo:
                 <figure class="shot"><img src="./imgs/popup.png" alt="Popup da extensão"><figcaption>Popup</figcaption></figure>
@@ -95,7 +124,7 @@
     </main>
     <footer class="site-footer">
         <div class="wrap">
-            <p>© <span id="year"></span> Extensão Popup — MTECHDevelopment</p>
+            <p>© <span id="year"></span> MTECHDevelopment & CatPy123 — Bootcamp 2</p>
             <a class="back-top" href="#topo" aria-label="Voltar ao topo">▲ Topo</a>
         </div>
     </footer>

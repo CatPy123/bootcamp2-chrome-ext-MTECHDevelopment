@@ -87,10 +87,100 @@ Observações:
 
 - Google Chrome (Manifest V3). Outros navegadores baseados em Chromium com suporte a MV3 podem funcionar, mas não são alvo oficial.
 
-## Alterações recentes
+---
 
-- v0.1.2: Adicionada a exportação em TXT ao salvar notas; melhorias gerais no popup.
+## GitHub Pages
+
+O projeto está publicado no GitHub Pages com duas seções principais:
+
+### 🌐 Acessar a Página
+
+**URL:** [https://mtechdevelopment.github.io/bootcamp2-chrome-ext-MTECHDevelopment/](https://mtechdevelopment.github.io/bootcamp2-chrome-ext-MTECHDevelopment/)
+
+### 📑 Estrutura do Site
+
+A página do GitHub Pages conta com:
+
+1. **Home** (`index.html`)
+   - Visão geral do projeto
+   - Links para os dois projetos (Extensão Chrome e PWA)
+   - Galeria de capturas da extensão
+
+2. **Extensão Chrome** (`popup.html`)
+   - Documentação completa da extensão
+   - Funcionalidades detalhadas
+   - Guia de instalação passo a passo
+   - Arquitetura (Manifest V3)
+   - Permissões utilizadas
+   - Capturas de tela
+
+3. **PWA Bloco de Notas** (`pwa.html`)
+   - Documentação da PWA
+   - Guia de execução com Docker Compose
+   - Alternativas para modo local (Python, Node)
+   - Como instalar a PWA
+   - Funcionalidades offline
+   - Solução de problemas (FAQ)
 
 ---
 
-MTECHDevelopment — Bootcamp 2
+## PWA — Bloco de Notas (Documentação e execução)
+
+Esta seção documenta a versão PWA (Progressive Web App) do bloco de notas associada ao projeto. A PWA oferece uma interface independente para criar/gerenciar notas locais e funciona offline quando instalada.
+
+Localização
+- A PWA está incluída no repositório na pasta `pwa/`.
+
+Requisitos
+- Docker e Docker Compose instalados.
+- Navegador Chromium/Chrome atualizado (no host).
+
+Executando em desenvolvimento com Docker Compose
+1. Na raiz do repositório, execute:
+   ```bash
+   docker compose run --build e2e
+   ```
+   Este comando:
+   - Constrói a imagem Docker necessária (se ainda não existir).
+   - Inicia um container com Node.js e ferramentas de desenvolvimento.
+   - Executa os testes E2E e serve a PWA automaticamente.
+
+2. A PWA estará disponível em `http://localhost:8080` (ou a porta configurada no `docker-compose.yml`).
+
+3. Abrir no navegador do host:
+   ```bash
+   $BROWSER http://localhost:8080
+   ```
+
+Executando em desenvolvimento (modo local sem Docker)
+1. Entre na pasta da PWA:
+   ```bash
+   cd pwa
+   ```
+
+2. Servir os arquivos localmente:
+   - Com Python 3 (porta 8080):
+     ```bash
+     python3 -m http.server 8080
+     ```
+   - Ou com http-server (Node):
+     ```bash
+     npm install -g http-server
+     http-server -p 8080
+     ```
+
+3. Abrir no navegador:
+   ```bash
+   $BROWSER http://localhost:8080
+   ```
+
+4. Testar funcionalidades offline:
+   - Abra a aplicação, acione a opção de instalação (se houver) ou use o menu do Chrome (Install).
+   - Desligue a conexão para verificar o cache via service worker.
+
+Instalar a PWA no Chrome
+- Acesse a URL servida (ex.: `http://localhost:8080`).
+- No omnibox (barra de endereço) do Chrome, caso a PWA seja detectada, haverá um botão "Install" (ou ícone de +). Clique e siga as instruções para instalar.
+- Alternativamente: Menu do Chrome → Aplicativos → Instalar este site como aplicativo.
+
+MTECHDevelopment e CatPy123(para o PWA) — Bootcamp 2
